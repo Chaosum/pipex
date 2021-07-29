@@ -1,12 +1,1 @@
-total 4352$
--rwxr-xr-x 1 matthieu matthieu     619 Jul  2 19:06 Makefile$
--rw-rw-r-- 1 matthieu matthieu 1319642 Jul  2 18:30 en.subject.pdf$
--rw-rw-r-- 1 matthieu matthieu       5 Jul 23 13:55 infile$
-drwxr-xr-x 2 matthieu matthieu    4096 Jul 21 15:28 libft$
--rw-rw-r-- 1 matthieu matthieu     676 Jul 26 13:58 outfile$
--rwxrwxr-x 1 matthieu matthieu   96384 Jul 26 13:58 pipex$
--rw-rw-r-- 1 matthieu matthieu    2575 Jul 26 13:58 pipex.c$
--rw-rw-r-- 1 matthieu matthieu    1092 Jul 26 13:39 pipex.h$
--rw-rw-r-- 1 matthieu matthieu 2866196 Jul  2 19:05 pipex.h.gch$
--rw-rw-r-- 1 matthieu matthieu  137680 Jul 26 13:58 pipex.o$
-drwxrwxr-x 2 matthieu matthieu    4096 Jul  2 10:41 utils$
+oui

@@ -1,6 +1,6 @@
 FOLDER_UTILS		= Utils
 
-SRCS				= pipex.c
+SRCS				= Pipex_new.c
 
 #SRCS_UTILS			= ${addprefix ${FOLDER_UTILS}/,}
 
@@ -12,7 +12,7 @@ NAME				= pipex
 
 CC					= gcc
 
-CFLAGS				=  -g3 -fsanitize=address -Wall -Wextra -Werror
+CFLAGS				=  #-g3 -fsanitize=address -Wall -Wextra -Werror
 
 all:		MAKELIBFT ${NAME}
 
