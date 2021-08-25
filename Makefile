@@ -32,6 +32,7 @@ MAKELIBFT:
 clean:
 			@rm -f *.o
 			@echo files cleaned !
+			@make clean -C ./libft
 
 fclean:		clean
 			@rm -f ${NAME}
