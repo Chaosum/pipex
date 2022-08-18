@@ -1,8 +1,4 @@
-FOLDER_UTILS		= Utils
-
 SRCS				= pipex.c pipex_utils.c pipex_utils_bis.c
-
-#SRCS_UTILS			= ${addprefix ${FOLDER_UTILS}/,}
 
 OBJS				= ${SRCS:.c=.o}
 
@@ -16,15 +12,14 @@ CFLAGS				= -g3 -fsanitize=address -Wall -Wextra -Werror
 
 all:		MAKELIBFT ${NAME}
 
-%.o:		%.c
-			${CC} ${CFLAGS} -o $@ -c $<
+bonus:		all
+
+%.o:		%.c ${INCLUDES}
+			@${CC} ${CFLAGS} -o $@ -c $<
 
 ${NAME}:	${OBJS}
-				gcc ${CFLAGS} -o ${NAME} ${OBJS} ./libft/libft.a
+				@gcc ${CFLAGS} -o ${NAME} ${OBJS} ./libft/libft.a
 				@echo compilation complete !
-			
-
-${OBJS}:	${INCLUDES}
 
 MAKELIBFT:
 			@make -C ./libft

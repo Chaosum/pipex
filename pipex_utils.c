@@ -6,7 +6,7 @@
 /*   By: mservage <mservage@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 16:00:34 by mservage          #+#    #+#             */
-/*   Updated: 2021/07/30 16:00:59 by mservage         ###   ########.fr       */
+/*   Updated: 2021/08/26 03:03:38 by mservage         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,23 @@ void	ft_free_and_exit(char *msg, t_fd *fd)
 	ft_exit_error(msg, fd);
 }
 
-void	check_main_arg(int ac)
+void	check_main_arg(int ac, char **av)
 {
+	int	i;
+
+	i = 0;
 	if (ac != 5)
 	{
 		write(1, "Wrong args\n", 12);
 		exit(1);
+	}
+	while (av[i])
+	{
+		if (av[i][0] == 0)
+		{
+			write(1, "Wrong args\n", 12);
+			exit(1);
+		}
+		i++;
 	}
 }

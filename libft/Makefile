@@ -6,18 +6,16 @@ NAME		= libft.a
 
 CC			= gcc
 
-CFLAGS		=  # -g3 -fsanitize=address -Wall -Wextra -Werror
+CFLAGS		=  -g3 -fsanitize=address -Wall -Wextra -Werror
 
 all:        ${NAME}
 
-%.o:        %.c
+%.o:        %.c libft.h get_next_line.h
 			@${CC} ${CFLAGS}  -o $@ -c $<
 
 ${NAME}:	${OBJS}
 			@ar rcs ${NAME} $?
 			@echo libft compiled
-	
-${OBJS}:	libft.h get_next_line.h
 
 clean:
 			@rm -f *.o
